@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularze</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link rel="stylesheet" href="normalize.css" type="text/css" />
+  </head>
+  <body>
+    <main>
+      <h1>Stronka testująca formularze</h1>
+      <form action="http://dev.cotenfrontend.pl" method="GET">
+        <!-- Pierwszy sposób  -->
+        <p>
+          <label for="firstName">Your name:</label>
+          <input type="text" id="firstName" name="name" />
+        </p>
+        <!-- Drugi sposób -->
+        <p>
+          <label for=""
+            >Your last name:
+            <input type="text" id="lastName" name="lastName" />
+          </label>
+        </p>
+        <p>
+          <label for="">
+            <input type="checkbox" value="agree" name="agreement" />I agree
+          </label>
+        </p>
+        <fieldset>
+          <legend>Jaką mamy dzisiaj pogodę?</legend>
+          <p>
+            <label
+              ><input type="radio" name="weather" value="too hot" />Za
+              ciepło</label
+            >
+          </p>
+          <p>
+            <label
+              ><input type="radio" name="weather" value="too cold" />Za
+              zimno</label
+            >
+          </p>
+        </fieldset>
+        <p>
+          <label
+            >Favourite number
+            <input
+              type="number"
+              name="favouriteNumber"
+              placeholder="Please enter your number"
+            />
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="time" />
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="date" />
+          </label>
+        </p>
+        <p>
+          <label
+            >Phone number
+            <input type="tel" name="phoneNumber" />
+          </label>
+        </p>
+        <p>
+          <label
+            >Email
+            <input type="email" name="email" />
+          </label>
+        </p>
+        <p>
+          <label>
+            <input type="range" min="0" max="20" step="5" />
+          </label>
+        </p>
+        <p>
+          <label
+            >Password:
+            <input
+              type="password"
+              name="password"
+              placeholder="Enter Your password"
+            />
+          </label>
+        </p>
+        <p>
+          <label>
+            wybierz plik
+            <input type="file" />
+          </label>
+        </p>
+        <p>
+          <label for="band">Pick favourite band</label>
+          <select name="band" id="band">
+            <option value="band1">Boys</option>
+            <option value="band2">Skaner</option>
+            <option value="band3">Akcent</option>
+          </select>
+        </p>
+        <p>
+          <label for="yourText">Write your text</label>
+          <textarea name="yourText" id="yourText">
+Write something here..</textarea
+          >
+        </p>
+        <p>
+          <input name="Wysylacz" type="submit" value="Send" />
+        </p>
+      </form>
+    </main>
+  </body>
+</html>
